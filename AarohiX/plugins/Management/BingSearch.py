@@ -5,7 +5,7 @@ from pyrogram import filters
 
 API_URL = "https://sugoi-api.vercel.app/search"
 
-@app.on_message(filters.command("bingsearch"))
+#@app.on_message(filters.command("bingsearch"))
 async def bing_search(dilop, message):
     try:
         if len(message.command) == 1:

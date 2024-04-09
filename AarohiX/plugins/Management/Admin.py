@@ -4,20 +4,20 @@ from pyrogram import *
 from pyrogram.types import *
 from AarohiX.utils.admin_check import admin_filter
 
-strict_txt = [
+#strict_txt = [
     "ᴅᴏsᴛ ᴋɪ ɢᴀᴀɴᴅ ɴʜɪ ᴍᴀᴀʀ sᴋᴛᴀ.",
     "sᴀᴄʜ ᴍᴇ? ᴀᴘɴᴇ ᴅᴏsᴛ ᴋɪ ɢᴀᴀɴᴅ ᴍᴀᴀʀ ʟᴏᴏɴ.",
     "ᴍᴀɪɴ ᴀᴘɴᴇ ʙᴇsᴛ ғʀɪᴇɴᴅ ᴋᴀ ʟᴜɴᴅ ɴʜɪ ᴋᴀᴀᴛ sᴋᴛᴀ.",
     "ᴍᴀɪɴ ᴜsᴇ ᴊᴀᴀɴᴛᴀ ʜᴏᴏɴ. ᴍᴜᴊʜᴇ sᴀᴍᴀᴊʜɴᴇ ᴋᴀ ᴘʀʏᴀssʜ ᴋʀᴏ ɪsᴋɪ ᴍᴀᴀʀɪ ᴛᴏ ʀᴀɴᴅᴡᴀ ᴍᴀʀʀ ᴊᴀʏᴇɢᴀ."
 ]
 
-promote = ["promote", "adminship"]
-fullpromote = ["fullpromote", "fadmin"]
-demote = ["demote", "lelo"]
+#promote = ["promote", "adminship"]
+#fullpromote = ["fullpromote", "fadmin"]
+#demote = ["demote", "lelo"]
 
 # ========================================= #
 
-@app.on_message(filters.command(["promote", "demote", "fullpromote"]) & admin_filter)
+#@app.on_message(filters.command(["promote", "demote", "fullpromote"]) & admin_filter)
 async def handle_admin_commands(_, message):
     reply = message.reply_to_message
     chat_id = message.chat.id

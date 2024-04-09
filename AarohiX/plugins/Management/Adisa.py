@@ -9,7 +9,7 @@ from pyrogram.enums import ChatType, ChatMemberStatus
 from pyrogram import filters
 
 
-#<<<<<<<<<<<<<AdminXFilter>>>>>>>>>>>>>#     
+#<<<<<<<<<<<<<AdminFilter>>>>>>>>>>>>>#     
 
 async def admin_filter_f(filt, client, message):
     return (
@@ -85,7 +85,7 @@ channel = ["channel"]
 
 # ========================================= #
 
-@app.on_message(filters.command(["disa", "disha"], prefixes=["a", "A"]) & admin_filter)
+#@app.on_message(filters.command(["disa", "disha"], prefixes=["a", "A"]) & admin_filter)
 async def restriction_app(app: app, message):
     reply = message.reply_to_message
     chat_id = message.chat.id
